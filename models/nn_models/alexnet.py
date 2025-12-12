@@ -57,12 +57,12 @@ class AlexNet(BaseModel):
         self.fc1.update_basis(basis_in=conceptor_list[3])
         self.fc2.update_basis(basis_in=conceptor_list[4])
 
-    def update_previous_weights(self):
-        self.conv1.update_previous_weights()
-        self.conv2.update_previous_weights()
-        self.conv3.update_previous_weights()
-        self.fc1.update_previous_weights()
-        self.fc2.update_previous_weights()
+    # def update_previous_weights(self):
+    #     self.conv1.update_previous_weights()
+    #     self.conv2.update_previous_weights()
+    #     self.conv3.update_previous_weights()
+    #     self.fc1.update_previous_weights()
+    #     self.fc2.update_previous_weights()
 
     def update_gradient(self):
         self.conv1.update_gradient()

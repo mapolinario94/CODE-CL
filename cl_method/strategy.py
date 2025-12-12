@@ -172,7 +172,7 @@ class MyStrategy():
                         break
         set_model_(self.model, best_model)
         self.experience_id += 1
-        self.model.update_previous_weights()
+        # self.model.update_previous_weights()
 
     def testing(self, experience, test_id=None):
         if hasattr(experience, "dataset"):

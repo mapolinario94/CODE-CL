@@ -20,8 +20,8 @@ class BaseModel(nn.Module):
     def update_basis(self, conceptor_list:list):
         raise NotImplementedError
 
-    def update_previous_weights(self):
-        raise NotImplementedError
+    # def update_previous_weights(self):
+    #     raise NotImplementedError
 
     def forward(self, x, labels=None, experience_id=None):
         raise NotImplementedError
